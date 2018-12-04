@@ -1,0 +1,15 @@
+<!ELEMENT newsroom (news*)>
+<!ELEMENT news (agency,headline,date,city,content)>
+<!ATTLIST news _uuid CDATA #REQUIRED>
+<!ELEMENT agency (#PCDATA)>
+<!ELEMENT headline (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT content (text,metadata)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT metadata (keywords,named-entity)>
+<!ELEMENT keywords (#PCDATA)>
+<!ELEMENT named-entity (people,organizations,locations)>
+<!ELEMENT people (#PCDATA)>
+<!ELEMENT organizations (#PCDATA)>
+<!ELEMENT locations (#PCDATA)>
